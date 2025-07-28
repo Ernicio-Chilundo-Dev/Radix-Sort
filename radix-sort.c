@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// functio to get the highest value
+// Function to get the highest value
 int getMax(int arr[], int n)
 {
     int max = arr[0];
@@ -40,3 +40,14 @@ void countingSort(int arr[], int n, int exp)
 
     
 }
+
+// Main function of Radix sort
+void radixSort(int arr[], int n)
+{
+    int max = getMax(arr, n);
+
+    // Applies counting sort to each digit
+    for (int exp = 1; max / exp > 0; exp *= 10)
+        countingSort(arr, n, exp);
+}
+
