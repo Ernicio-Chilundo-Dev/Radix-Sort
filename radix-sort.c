@@ -51,3 +51,13 @@ void radixSort(int arr[], int n)
         countingSort(arr, n, exp);
 }
 
+// Function for print an array
+void printArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
