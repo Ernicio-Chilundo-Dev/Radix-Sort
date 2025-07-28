@@ -61,3 +61,15 @@ void printArray(int arr[], int n)
     printf("\n");
 }
 
+
+// Example of use
+int main()
+{
+    int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    radixSort(arr, n);
+    printArray(arr, n);
+
+    return 0;
+}
